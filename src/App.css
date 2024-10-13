@@ -1,0 +1,109 @@
+.App {
+  text-align: center;
+  background-image: linear-gradient(darkblue, purple);
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: plum;
+}
+
+#navbar {
+  scroll-snap-align: start;
+  color: white;
+}
+
+#intro {
+  scroll-snap-align: start;
+}
+
+#experience {
+  scroll-snap-align: start;
+}
+
+#websites {
+  scroll-snap-align: start;
+}
+
+#contact {
+  scroll-snap-align: start;
+}
+
+.container-fluid {
+  background-image: linear-gradient(darkblue, purple);
+}
+
+#custom-switch {
+  background-color: transparent;
+  outline: transparent;
+}
+
+@-webkit-keyframes fade_move_down {
+  0% {
+    -webkit-transform: translate(0, -10px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(0, 10px);
+    opacity: 0;
+  }
+}
+@-moz-keyframes fade_move_down {
+  0% {
+    -moz-transform: translate(0, -10px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -moz-transform: translate(0, 10px);
+    opacity: 0;
+  }
+}
+@keyframes fade_move_down {
+  0% {
+    transform: translate(0, -10px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 10px);
+    opacity: 0;
+  }
+}
+
+.down-arrow {
+  z-index: 2;
+  color: aliceblue;
+  transform: translate(-50%, 0%);
+  -webkit-animation: fade_move_down 4s ease-in-out infinite;
+  -moz-animation: fade_move_down 4s ease-in-out infinite;
+  animation: fade_move_down 4s ease-in-out infinite;
+}
+
+.down-arrow:hover {
+  color: plum;
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: plum;
+  cursor: pointer;
+}
